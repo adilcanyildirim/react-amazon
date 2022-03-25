@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-amazon/static/css/main.fa654561.css",
-    "main.js": "/react-amazon/static/js/main.d2a75dca.js",
-    "static/js/787.ebd7646a.chunk.js": "/react-amazon/static/js/787.ebd7646a.chunk.js",
-    "index.html": "/react-amazon/index.html",
-    "main.fa654561.css.map": "/react-amazon/static/css/main.fa654561.css.map",
-    "main.d2a75dca.js.map": "/react-amazon/static/js/main.d2a75dca.js.map",
-    "787.ebd7646a.chunk.js.map": "/react-amazon/static/js/787.ebd7646a.chunk.js.map"
+    "main.css": "/adilcanyildirim/react-amazon/static/css/main.fa654561.css",
+    "main.js": "/adilcanyildirim/react-amazon/static/js/main.3fd7312f.js",
+    "static/js/787.ebd7646a.chunk.js": "/adilcanyildirim/react-amazon/static/js/787.ebd7646a.chunk.js",
+    "index.html": "/adilcanyildirim/react-amazon/index.html",
+    "main.fa654561.css.map": "/adilcanyildirim/react-amazon/static/css/main.fa654561.css.map",
+    "main.3fd7312f.js.map": "/adilcanyildirim/react-amazon/static/js/main.3fd7312f.js.map",
+    "787.ebd7646a.chunk.js.map": "/adilcanyildirim/react-amazon/static/js/787.ebd7646a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa654561.css",
-    "static/js/main.d2a75dca.js"
+    "static/js/main.3fd7312f.js"
   ]
 }
