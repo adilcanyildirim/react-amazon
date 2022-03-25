@@ -32,6 +32,7 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/react-amazon" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route
