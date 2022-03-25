@@ -1,0 +1,36 @@
+[debug] [2022-03-24T18:08:06.213Z] ----------------------------------------------------------------------
+[debug] [2022-03-24T18:08:06.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ParkNet\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-24T18:08:06.215Z] CLI Version:   10.4.2
+[debug] [2022-03-24T18:08:06.215Z] Platform:      win32
+[debug] [2022-03-24T18:08:06.215Z] Node Version:  v14.17.4
+[debug] [2022-03-24T18:08:06.216Z] Time:          Thu Mar 24 2022 21:08:06 GMT+0300 (GMT+03:00)
+[debug] [2022-03-24T18:08:06.216Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-24T18:08:06.277Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-24T18:08:06.277Z] > authorizing via signed-in user (adilcan.y@gmail.com)
+[debug] [2022-03-24T18:08:06.277Z] [iam] checking project challenge-28593 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-24T18:08:06.280Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-28593:testIamPermissions [none]
+[debug] [2022-03-24T18:08:06.280Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-28593:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T18:08:07.361Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-28593:testIamPermissions 200
+[debug] [2022-03-24T18:08:07.361Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-28593:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-24T18:08:07.362Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/challenge-28593/serviceAccounts/challenge-28593@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-03-24T18:08:07.362Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/challenge-28593/serviceAccounts/challenge-28593@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-03-24T18:08:08.377Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/challenge-28593/serviceAccounts/challenge-28593@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-03-24T18:08:08.377Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/challenge-28593/serviceAccounts/challenge-28593@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-03-24T18:08:08.379Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-28593 [none]
+[debug] [2022-03-24T18:08:08.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-28593 200
+[debug] [2022-03-24T18:08:08.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-28593 {"projectId":"challenge-28593","projectNumber":"981038740226","displayName":"amazon-challenge","name":"projects/challenge-28593","resources":{"hostingSite":"challenge-28593"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'challenge-28593'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2022-03-24T18:08:09.083Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:424:7)
+    at Config.path (C:\Users\ParkNet\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:122:45)
+    at getChildEnvironment (C:\Users\ParkNet\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\ParkNet\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\ParkNet\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
