@@ -39,24 +39,27 @@ function Header(props) {
           {!user && <LoginOption />}
           {user && <LogoutOption user={user} />}
         </div>
-        <Link to="/order">
-          <div className="header__option">
+
+        <div className="header__option">
+          <Link to="/order">
             <span className="header__optionLineOne">Returns</span>
             <span className="header__optionLineTwo">& Orders</span>
-          </div>
-        </Link>
+          </Link>
+        </div>
+
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
-        <Link to="/checkout">
-          <div className="header__optionBasket">
+
+        <div className="header__optionBasket">
+          <Link to="/checkout">
             <ShoppingBasketIcon />
             <span className="header__optionLineTwo header__basketCount">
               {totalQuantity}
             </span>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </div>
   );
