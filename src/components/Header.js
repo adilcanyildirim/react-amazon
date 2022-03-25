@@ -35,31 +35,29 @@ function Header(props) {
         </div>
       </div>
       <div className="header__navContainer">
-        <div className="header__option">
-          {!user && <LoginOption />}
-          {user && <LogoutOption user={user} />}
-        </div>
+        {!user && <LoginOption />}
+        {user && <LogoutOption user={user} />}
 
-        <div className="header__option">
-          <Link to="/order">
+        <Link to="/order">
+          <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
             <span className="header__optionLineTwo">& Orders</span>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
 
-        <div className="header__optionBasket">
-          <Link to="/checkout">
+        <Link to="/checkout">
+          <div className="header__optionBasket">
             <ShoppingBasketIcon />
             <span className="header__optionLineTwo header__basketCount">
               {totalQuantity}
             </span>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
